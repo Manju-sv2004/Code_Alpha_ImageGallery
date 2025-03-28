@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Modern Image Gallery</h1>
+        <div class="upload-section">
+            <input type="file" id="fileInput" accept="image/*,video/*" multiple style="display: none;">
+            <button id="uploadBtn" class="upload-btn">Add Media</button>
+        </div>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="images">Images</button>
+            <button class="filter-btn" data-filter="videos">Videos</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="gallery-container">
+            <!-- Gallery items will be dynamically added here -->
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <button class="nav-btn prev-btn">&#10094;</button>
+        <button class="nav-btn next-btn">&#10095;</button>
+        <div class="lightbox-content">
+            <!-- Content will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
